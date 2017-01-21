@@ -1,0 +1,31 @@
+/*
+ Default PeopleAdmin Printable Styles.  Overridden by employer printable 
+ style sheets.
+
+ * Copyright (c) 2001-2003 PeopleAdmin, Inc.  All Rights Reserved.
+ *
+ * PEOPLEADMIN, INC.  MAKES NO REPRESENTATIONS OR WARRANTIES
+ * ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+ *
+ * PEOPLEADMIN, INC. SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED
+ * BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+
+*/
+
+/* 
+ * This is the master style sheet for all printables.
+ */
+
+.box { background-color: #FFFFFF; border-width: 1px; border-color: #000000; border-style: solid; width: 100%; }
+.question { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight:normal; color: #000000; }
+.answer { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight:bold; color: #000000; }
+.answerInline { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; font-weight:bold; color: #000000; }
+.sectionHeading {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; font-weight: bold; color: #000000; }
+.sectionQuestion {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #000000}
+.sectionAnswer {  font-family: Arial, Helvetica, sans-serif; font-size: 8.5pt; font-weight: bold;}
+.closeWindowLink {  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #999999}
+.title {  font-family: Garamond; font-size: 36px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; text-decoration: none}
+.subTitle { font-family: Garamond; font-size: 20px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; tex

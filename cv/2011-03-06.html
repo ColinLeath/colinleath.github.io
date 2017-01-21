@@ -1,0 +1,1277 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html class="pageview">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  
+  * html body {
+    height: 1100px;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  
+
+  
+    
+    
+    .writely-callout-data {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      margin-left: -1px;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Georgia;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+p.DateHang, li.DateHang, div.DateHang {
+  margin-top: 0in;
+  margin-right: 0in;
+  margin-bottom: 0in;
+  margin-left: .25in;
+  margin-bottom: 0in;
+  text-indent: -.25in;
+}
+p.Citation, li.DateHang, div.DateHang {
+  margin-top: 0in;
+  margin-right: 0in;
+  margin-bottom: 0in;
+  margin-left: .25in;
+  margin-bottom: 0in;
+  text-indent: -.25in;
+}
+p.Indent {
+  margin-top: 0in;
+  margin-right: 0in;
+  margin-bottom: 0in;
+  margin-left: 0in;
+  margin-bottom: 0in;
+  text-indent: .25in;
+}
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Georgia;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Copy of Colin Leath: guiding adventures in life/love/creation</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<div class=Section1 style=FONT-FAMILY:Georgia>
+  <p align=center class=NormalBodyText style=TEXT-ALIGN:center>
+    <b><font size=4>Colin Leath</font></b>
+  </p>
+  <p align=center class=NormalBodyText style=TEXT-ALIGN:center>
+    <b>&nbsp;</b>
+  </p>
+  <p align=center class=NormalBodyText style=TEXT-ALIGN:center>
+    &nbsp; <i>Spring 2010</i>
+  </p>
+  <p class=NormalBodyText>
+    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
+  </p>
+  <table border=0 cellpadding=0 cellspacing=0 class="MsoNormalTable zeroBorder" style=WIDTH:100%>
+    <tbody>
+    <tr style=HEIGHT:0.35in>
+      <td style=HEIGHT:0.35in;WIDTH:50% valign=top>
+        <p class=NormalBodyText>
+        </p>
+        <p class=NormalBodyText>
+          <b>5142 Hollister Ave #5</b><br>
+        </p>
+        <p class=NormalBodyText>
+          <b>Santa Barbara, CA 93111<br>
+          </b>
+        </p>
+      </td>
+      <td style=HEIGHT:0.35in;WIDTH:50% valign=top>
+        <p align=right class=NormalBodyText style=MARGIN-LEFT:6.5pt;TEXT-ALIGN:right>
+          <b>805 699 6411<br>
+          </b>
+        </p>
+        <p align=right class=NormalBodyText style=MARGIN-LEFT:6.5pt;TEXT-ALIGN:right>
+          <b>colinleath@gmail.com</b>
+        </p>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <p class=NormalBodyText>
+  </p>
+  <p class=HeaderOfSection>
+    <b><br>
+    </b>
+  </p>
+  <p class=HeaderOfSection style=TEXT-ALIGN:center>
+    <b>guiding adventures in life/love/creation</b><br>
+  </p>
+</div>
+<p class=HeaderOfSection style=FONT-FAMILY:Georgia>
+  <br>
+</p>
+<p class=HeaderOfSection style=FONT-FAMILY:Georgia>
+  <b>Endeavors<br>
+  </b>
+</p>
+<div class=Section1 style=FONT-FAMILY:Georgia>
+  <ul>
+    <li>
+      Guiding pilgrimages to centers of earthcare and peoplecare. As with <a href=http://directory.ic.org/22140/Los_Padres_Walkers id=xi4h title="Los Padres Walkers">Los Padres Walkers</a>.
+    </li>
+    <li>
+      Mindfulness. As during a two-week retreat at Deer Park Monastery in 2009.
+    </li>
+    <li>
+      Love in creating. As in growing and helping others grow by working as an instructor or guide.<br>
+    </li>
+  </ul>
+</div>
+<div>
+  &nbsp;
+</div>
+<p class=HeaderOfSection>
+  <b>Certifications</b>
+</p>
+<p class=DateHang>
+  Wilderness First Responder and CPR/First Aid. NOLS WMI. Expires 12/14/2011. &lt;<a href=http://docs.google.com/fileview?id=0B7am_p8rWoN1YTA1YWU0ZTItMTc0YS00NTMzLWEyYTEtOGMwNGI5ZjFhNjJl&amp;hl=en id=a4o_ title=view>view</a>&gt;
+</p>
+<p class=DateHang>
+  Lifeguarding and First Aid. American Red Cross. Expires 5/21/2012.&nbsp; &lt;<a href=http://docs.google.com/fileview?id=0B7am_p8rWoN1ZjExYmNhMmItMTZjNy00NzA4LWIzMjMtOGE2YmExMzEyYjFl&amp;hl=en id=x3sw title=view>view</a>&gt;
+</p>
+<div>
+  US Merchant Mariner's Document (Ordinary Seaman), TWIC. Expire 11/2013.
+</div>
+<div>
+  45-Hour Challenge Course Facilitator Training by RJKCCC &amp; SDSU ARC. 3/25/2004. &lt;<a href=http://docs.google.com/fileview?id=0B7am_p8rWoN1Mjk3OTk4NWMtNGM5NS00MDI5LTg0ZGQtMmJjMDllZmM4ZTEw&amp;hl=en id=jqpq title=view>view</a>&gt;&nbsp;<br>
+  <br>
+  <b>Wilderness Experience</b><br>
+</div>
+<ul>
+  <li>
+    Seven-week Sierra walk, Kernville to Tuolumne Meadows and back, ~520 miles. Summer 2008.
+  </li>
+  <li>
+    Instructor for Peak Performance on a 4-night 8<sup>th</sup> grade backpacking and kayak trip in Big Sur. 5/2006.
+  </li>
+  <li>
+    BSA High Adventure: Philmont and twice Atikokan Canoe Base (2<sup>nd</sup> time as an adult leader). 1991-1998.
+  </li>
+  <li>
+    Rafting, snowshoeing, and cross-country skiing on family vacations; accompanied diplomats and business leaders on a 5-day Salmon River rafting trip and conference in 1993.
+  </li>
+</ul>
+<ul>
+  <li>
+    Occasional top-rope climbing with friends and as a participant in outdoor programs.
+  </li>
+</ul>
+<p class=DateHang>
+</p>
+<p class=HeaderOfSection>
+  <b><br>
+  </b>
+</p>
+<p class=HeaderOfSection>
+  <b>Employment</b><br>
+</p>
+<table border=0 cellpadding=0 cellspacing=0 class="MsoNormalTable zeroBorder">
+  <tbody>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=DateHang>
+        Fall 2009
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt width=378>
+      <p class=NormalBodyText>
+        <b>Naturalist (41+ field days)<br>
+        </b>
+      </p>
+      <p class=NormalBodyText style=MARGIN-LEFT:0.25in>
+      </p>
+      <p class=DateHang>
+        Naturalists at Large<br>
+      </p>
+      <p class=NormalBodyText>
+        Ventura, California
+      </p>
+      <p class=Indent>
+        Developed and facilitated multi-day outdoor education and group-building programs throughout California to help students and faculty become comfortable in the outdoors and with each other. Experimented with new ways to foster fun and growth. Met many who continue to inspire me.<br>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt width=130>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt width=378>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=DateHang>
+        Summer 2009
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt width=378>
+      <p class=NormalBodyText>
+        <b>Mentor (volunteer; 20 field days)</b><br>
+      </p>
+      <p class=NormalBodyText style=MARGIN-LEFT:0.25in>
+      </p>
+      Wilderness Youth Project<br>
+      <p class=NormalBodyText>
+        Santa Barbara, California
+      </p>
+      <p class=Indent>
+        &nbsp; Let 3-5-year-olds be along streams, bluffs, beaches, marshes, boulders, a river, and a rose garden aided by caring older kids, parents, and co-mentors. Shared gratitude. Modeled and counseled peace and the good message. Began to mentor—to broaden individuals' views of what is possible and to recognize and deepen passion.<br>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt width=130>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt width=378>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=DateHang>
+        Spring 2004-Summer 2008<br>
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt valign=top width=378>
+      <p class=DateHang>
+        <b>Challenge Course Facilitator, Lead Facilitator, Leadership Camp Lead</b>
+      </p>
+      <p class=NormalBodyText style=MARGIN-LEFT:0.25in>
+      </p>
+      <p class=DateHang>
+        Ray and Joan Kroc Corps Community Center (&amp; four other companies)<br>
+      </p>
+      <p class=NormalBodyText>
+        San Diego, California
+      </p>
+      <p class=Indent>
+        Designed teambuilding programs to meet client goals. Supervised co-facilitators and trainees. Inspected course. Designed and led two sessions of week-long Junior Leaders daycamp. Grew to guide 80+ participant programs for AFROTC and high schools. Grew in ability to nourish fun and appreciation. I continue to learn from my coworkers and supervisors there.<br>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=Contenudetableau>
+        &nbsp;
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt valign=top width=378>
+      <p class=NormalBodyText style=MARGIN-LEFT:0.25in>
+        <b>&nbsp;</b>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=Contenudetableau>
+        Fall 2001-Spring 2003
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt valign=top width=378>
+      <p class=NormalBodyText>
+        <b>Research Support Specialist</b>
+      </p>
+      <p class=DateHang>
+        Department of Vision Sciences, SUNY State College of Optometry
+      </p>
+      <p class=DateHang>
+        New York, New York
+      </p>
+      <p class=Indent>
+        Wrote software to create and present visual displays and to collect and analyze data. Supported experimental design, recruiting and running study participants, apparatus construction, and data analysis and presentation. Mentored by a caring and considerate professor. Grew in respect for forethought and precision.<br>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=Contenudetableau>
+        &nbsp;
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt valign=top width=378>
+      <p class=NormalBodyText>
+        <b>&nbsp;</b>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:126.4pt valign=top width=130>
+      <p class=Contenudetableau>
+        Fall 1999-Spring 2001
+      </p>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=VERTICAL-ALIGN:top>
+      <br>
+    </td>
+    <td style=WIDTH:377.75pt valign=top width=378>
+      <p class=DateHang>
+        <b>VB Programmer (3<sup>rd</sup>), Install Developer (2<sup>nd</sup>), QA Analyst (1<sup>st</sup>)</b>
+      </p>
+      <p>
+        Greentree Systems Incorporated
+      </p>
+      <p>
+        Pacific Grove, California
+      </p>
+      + Maintained, enhanced, and documented Resume Analyzer.<br>
+      + Designed and coded iGreentree setup, reducing one-hour process to 15 minutes.<br>
+      + Verified bugs. Verified fixes as harmless. Supported betas. Maintained installs.<br>
+      Grateful to have worked with creative and caring people.<br>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<p>
+</p>
+<p class=HeaderOfSection>
+  <b><br>
+  </b>
+</p>
+<p class=HeaderOfSection>
+  <b>Other Experience</b>
+</p>
+<table border=0 cellpadding=0 cellspacing=0 class="MsoNormalTable zeroBorder" style=WIDTH:538.4pt width=538>
+  <tbody>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      Fall 2008-Spring 2010<br>
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      <p class=DateHang>
+        Multiple 3-14-day walks in Los Padres NF, other coast ranges, and southern Sierras
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 2008
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Hand-sewed clothes and equipment: quilt, tarp, hat, scarf, pack
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Spring 2008
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Co-organized an origin skills gathering in Rainbow, California &lt;<a href=http://sdprim.blogspot.com/ id=ruq3 title=sdprim>sdprim</a>&gt;
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Fall 2006-Spring 2008
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Gardener, participant, and volunteer, San Diego Food Not Lawns &lt;<a href=http://4602seminole.blogspot.com/ id=ka7v title=garden>garden</a>&gt;
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Fall 2007-Spring 2008
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Sat still, watched the mind, read about gurus, and wrote &lt;<a href=http://yailuminado.blogspot.com/ id=u6ha title="j9k blog">j9k blog</a>&gt;
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 2007
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Kitchen assistant at Quail Springs during two-week permaculture course
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Spring 2007
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Vipassana meditation course, ten days
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      Fall 2006<br>
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      <p class=DateHang>
+        Graduate Teaching Associate for RWS100 (freshman composition instructor), SDSU
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 2004
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Staff, Hostel Obispo, San Luis Obispo
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Spring-Fall 2003
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Bicycled from NYC to Pacific Ocean via Mexico, ecovillages &lt;<a href=http://purl.org/net/cfu/Members/colin/travellog2003-09-07/ id=rqmg title=log>log</a>&gt;
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Fall 2002-Spring 2003
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=Citation>
+        Volunteer chorister, Saint Bartholomew's Church, New York City
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Fall 2002<br>
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Co-founded Integral Transformative Practice NYC group &lt;<a href=http://health.groups.yahoo.com/group/itpnyc/ id=f6rx title=itpnyc>itpnyc</a>&gt;<br>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Summer 2000-Spring 2002
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Modern and ballet dance training, Monterey area and New York City
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 2001
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Counselor at English camps in Italy
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Spring 2001
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Crisis line volunteer, Community Human Services Counseling Center, Monterey
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 1999-Spring 2001
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Monterey Hostel Society volunteer
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Fall 1998-Fall 1999
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Temporary employee in Washington, DC, Austin, TX, and Monterey, CA
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Fall 1997-Summer 1998
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Designed and ran 8-week research study, "<font color=#000000><a href=http://purl.org/net/cleath/writings/effect.htm title="The effect of participation in the Meaning in Life Forum on participants' experiences of meaning in life">The effect of participation in the Meaning in Life Forum on participants' experiences of meaning in life</a></font>"
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Spring 1997-Spring 1998
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      <p class=DateHang>
+        Research Assistant for UW School of Nursing Reconnecting Youth project &lt;<a href=http://www.son.washington.edu/departments/pch/ry/ id=fo6o title=ry>ry</a>&gt;<br>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Spring 1996
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Teen Feed volunteer in Seattle, eating meals with homeless youth
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Fall 1994-Spring 1995
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Computer instructor for 4<sup>th</sup> and 5<sup>th</sup> graders
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt width=155>
+      Summer 1994
+    </td>
+    <td style=WIDTH:383.4pt width=383>
+      Worked and windsurfed in Maui without a car
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Summer 1992-Summer 1994
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Sailing and windsurfing instructor
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style=WIDTH:155pt valign=top width=155>
+      <p>
+        Spring 1991
+      </p>
+    </td>
+    <td style=WIDTH:383.4pt valign=top width=383>
+      <p class=DateHang>
+        Eagle Scout service project
+      </p>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<p>
+  &nbsp;
+</p>
+<p class=HeaderOfSection>
+  <b>Publications </b>
+</p>
+<p class=Citation>
+  Leath, Colin, ed. <i>SD/TJ Design, Plant, Harvest: nourishing our shared space, caring for the commons. </i>2007-2008. &lt;<a href=http://sdtjdph.blogspot.com/>http://sdtjdph.blogspot.com/</a>&gt;
+</p>
+<p class=NormalBodyText style=MARGIN-LEFT:0.5in;MARGIN-RIGHT:0pt>
+  A collaborative blog demonstrating read/write web technologies to San Diego- and Tijuana-area activists.
+</p>
+<p class=Citation>
+  Leath, Colin, ed. <i>The carfree universe project: Strengthening communities of the carfree</i>. 2003‑2007. &lt;<a href=http://purl.org/net/cfu/ title="(previously at carfreeuniverse.org)">http://purl.org/net/cfu/</a>&gt;
+</p>
+<p class=NormalBodyText style=MARGIN-LEFT:0.5in;MARGIN-RIGHT:0pt>
+  A multi-user content management system allowing content to be tagged and sorted by topic, location, and type.
+</p>
+<p class=DateHang>
+</p>
+<p class=HeaderOfSection>
+  <b><br>
+  </b>
+</p>
+<p class=HeaderOfSection>
+  <b>Education</b>
+</p>
+<p class=DateHang>
+  San Diego State University. 2004-2006. English- and Spanish-language literature, TESOL, and pedagogy <a href=http://purl.org/j9k/cv/transcript/sdsu.html id=le6d title=coursework>coursework</a>.
+</p>
+<p class=DateHang>
+  University of Washington. Bachelor of Science with departmental honors in Psychology, 1999. Calculus, physics, chemistry, and biology <a href=http://purl.org/j9k/cv/transcript/index.html>coursework</a>.
+</p>
+<p class=DateHang>
+  Thomas Jefferson High School for Science and Technology. Diploma, 1994. Computer science, computer architecture, digital electronics, and computer-aided design coursework.
+</p>
+<p class=DateHang>
+  &nbsp;
+</p>
+<p class=HeaderOfSection>
+  <b>References</b>
+</p>
+<table border=0 cellpadding=0 cellspacing=2 class=zeroBorder width=100%>
+  <tbody>
+  <tr>
+    <td valign=top>
+      <p>
+        Andrea Sanford
+      </p>
+      <p class=DateHang>
+        Day Camps Manager
+      </p>
+      <p class=DateHang>
+        Ray and Joan Kroc Corps Community Center
+      </p>
+    </td>
+    <td valign=top>
+      <p>
+        Carol Anderson
+      </p>
+      <p>
+        Former Lead Facilitator
+      </p>
+      <p class=DateHang>
+        Ray and Joan Kroc Corps Community Center
+      </p>
+    </td>
+    <td valign=top>
+      Chris Bonelli<br>
+      Program Coordinator<br>
+      Naturalists at Large
+    </td>
+  </tr>
+  </tbody>
+</table>
+<br></body>
+</html>
