@@ -1,0 +1,45 @@
+<hr noshade size="1">
+
+<!-- div class="ss-form">
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='form_response.html';}"></iframe>
+<form action="https://spreadsheets.google.com/formResponse?formkey=dHlrTERPZGlFbVB2ZzNrNUhBekltX2c6MQ&amp;theme=0AX42CRMsmRFbUy0zODExOWI0Yi0yMTExLTRkMzYtOGUyZi1iNDZiMTFjZmMxY2Q&amp;ifq" method="post"
+target="hidden_iframe" onsubmit="submitted=true;" -->
+<!-- form action="https://spreadsheets.google.com/formResponse?formkey=dHlrTERPZGlFbVB2ZzNrNUhBekltX2c6MQ&amp;theme=0AX42CRMsmRFbUy0zODExOWI0Yi0yMTExLTRkMzYtOGUyZi1iNDZiMTFjZmMxY2Q&amp;ifq" method="POST" id="ss-form"--> 
+<!-- br> 
+<div class="errorbox-good"> 
+<div class="ss-item  ss-paragraph-text">
+<div class="ss-form-entry">
+<label class="ss-q-title" for="entry_0">What can you tell me?<br></label> 
+<textarea name="entry.0.single" rows="8" cols="75" class="ss-q-long" id="entry_0"></textarea>
+</div></div></div> 
+<input type="hidden" name="pageNumber" value="0"> 
+<input type="hidden" name="backupCache" value=""> 
+<div class="ss-item ss-navigate"><div class="ss-form-entry"> 
+<input type="submit" name="submit" value="Submit"></div></div></form> 
+<script type="text/javascript"> 
+      
+      (function() {
+var divs = document.getElementById('ss-form').
+getElementsByTagName('div');
+var numDivs = divs.length;
+for (var j = 0; j < numDivs; j++) {
+if (divs[j].className == 'errorbox-bad') {
+divs[j].lastChild.firstChild.lastChild.focus();
+return;
+}
+}
+for (var i = 0; i < numDivs; i++) {
+var div = divs[i];
+if (div.className == 'ss-form-entry' &&
+div.firstChild &&
+div.firstChild.className == 'ss-q-title') {
+div.lastChild.focus();
+return;
+}
+}
+})();
+      </script></div> 
+      </div -->
